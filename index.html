@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert Result To Grade</title>
+    <link
+      rel="shortcut icon"
+      href="img/icons8-gpa-calculator-48.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header Area-->
+    <header>
+      <h1>Convert Your HSC Result Into Grade With Mahbub</h1>
+      <h6>(For Science, Business and Humanities Student)</h6>
+    </header>
+
+    <!-------------- table area --------------->
+    <section class="container">
+      <div
+        class="
+          cart
+          table-responsive-sm
+          table-responsive-md
+          table-responsive-lg
+          table-responsive-xl
+        "
+      >
+        <h3>Give Me Your Subject's Number</h3>
+        <form action="">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Subject</th>
+                <th scope="col">Number</th>
+                <th scope="col" class="grade">Grade</th>
+                <th scope="col">Your Number</th>
+                <th scope="col">Your GPA</th>
+                <th scope="col">Your Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Bangla</th>
+                <td>0-100</td>
+                <td>A-F</td>
+                <td>
+                  <input
+                    id="bangla_input"
+                    min="0"
+                    max="100"
+                    type="number"
+                    placeholder="Type Your Number"
+                  />
+                </td>
+                <td><span id="get_bangla_gpa"></span></td>
+                <td><span id="bangla_grade"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">English</th>
+                <td>0-100</td>
+                <td>A-F</td>
+                <td>
+                  <input
+                    id="english_input"
+                    min="0"
+                    max="100"
+                    type="number"
+                    placeholder="Type Your Number"
+                  />
+                </td>
+                <td><span id="get_english_gpa"></span></td>
+                <td><span id="english_grade"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">ICT</th>
+                <td>0-100</td>
+                <td>A-F</td>
+                <td>
+                  <input
+                    id="ict_input"
+                    min="0"
+                    max="100"
+                    type="number"
+                    placeholder="Type Your Number"
+                  />
+                </td>
+                <td><span id="get_ict_gpa"></span></td>
+                <td><span id="get_ict_grade"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <select class="select_op" name="" id="">
+                    <option selected value="">Physics</option>
+                    <option value="">Accounting</option>
+                    <option value="">Logic</option>
+                  </select>
+                </th>
+                <td>0-100</td>
+                <td>A-F</td>
+                <td>
+                  <input
+                    id="get_phy_acco_log_input"
+                    min="0"
+                    max="100"
+                    type="number"
+                    placeholder="Type Your Number"
+                  />
+                </td>
+                <td><span id="get_phy_acco_log_gpa"></span></td>
+                <td><span id="get_phy_acco_log_grade"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <select class="select_op" name="" id="">
+                    <option selected value="">Chemistry</option>
+                    <option value="">Business Org.</option>
+                    <option value="">Geography</option>
+                  </select>
+                </th>
+                <td>0-100</td>
+                <td>A-F</td>
+                <td>
+                  <input
+                    id="get_che_bus_geo_input"
+                    min="0"
+                    max="100"
+                    type="number"
+                    placeholder="Type Your Number"
+                  />
+                </td>
+                <td><span id="get_che_bus_geo_gpa"></span></td>
+                <td><span id="get_che_bus_geo_grade"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <select class="select_op" name="" id="">
+                    <option selected value="">Higher Math</option>
+                    <option value="">Finance,Banking</option>
+                    <option value="">Civic & Governance</option>
+                  </select>
+                </th>
+                <td>0-100</td>
+                <td>A-F</td>
+                <td>
+                  <input
+                    id="get_math_fin_civic_input"
+                    max="100"
+                    min="0"
+                    type="number"
+                    placeholder="Type Your Number"
+                  />
+                </td>
+                <td><span id="get_math_fin_civic_gpa"></span></td>
+                <td><span id="get_math_fin_civic_grade"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <select class="select_op" name="" id="">
+                    <option selected value="">Biology</option>
+                    <option value="">Product Management</option>
+                    <option value="">Sociology</option>
+                  </select>
+                </th>
+                <td>0-100</td>
+                <td>A-F</td>
+                <td>
+                  <input
+                    id="get_bio_pro_soc_input"
+                    min="0"
+                    max="100"
+                    type="number"
+                    placeholder="Type Your Number"
+                  />
+                </td>
+                <td><span id="get_bio_pro_soc_gpa"></span></td>
+                <td><span id="get_bio_pro_soc_grade"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <select class="select_op" name="" id="">
+                    <option value="">Economic</option>
+                    <option value="">Islamic History & Culture</option>
+                    <option value="">Social Work</option>
+                    <option value="">History</option>
+                    <option selected value="">Psychology</option>
+                  </select>
+                </th>
+                <td>0-100</td>
+                <td>A-F</td>
+                <td>
+                  <input
+                    id="get_other_input"
+                    min="0"
+                    max="100"
+                    type="number"
+                    placeholder="Type Your Number"
+                  />
+                </td>
+                <td><span id="get_other_gpa"></span></td>
+                <td><span id="get_other_grade"></span></td>
+              </tr>
+            </tbody>
+          </table>
+          <hr />
+          <div class="d-flex justify-content-around">
+            <button id="reload_btn" class="btn btn-success">
+              <i class="fa fa-retweet" aria-hidden="true"></i> Reload
+            </button>
+            <button id="confirm_btn" class="btn btn-success">
+              <i class="fa fa-check-circle" aria-hidden="true"></i> Confirm
+            </button>
+            <button id="reset" type="reset" class="btn btn-success">
+              <i class="fa fa-undo" aria-hidden="true"></i> Reset
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!------------ footer area -------------->
+
+    <footer>
+      <div class="container footer row">
+        <div class="footer_text col-sm-12 text-center">
+          <h5>
+            Developed with <img src="img/icons8-love-48.png" /> by
+            <span>RafiZaman</span>
+          </h5>
+          <h6>© 2021 All right reserved</h6>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

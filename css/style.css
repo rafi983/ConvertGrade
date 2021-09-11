@@ -1,0 +1,95 @@
+body {
+  font-family: "Sriracha", cursive;
+}
+
+header {
+  text-align: center;
+  background-color: rgb(136, 181, 240);
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+.cart {
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: #f6f5fa;
+  border-radius: 5px;
+}
+.cart h3 {
+  color: indianred;
+  padding: 5px;
+}
+
+.thead-light th {
+  color: black !important;
+}
+input {
+  width: 40%;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.966);
+}
+input:focus {
+  background-color: rgb(234, 239, 255);
+}
+.btn-success {
+  font-size: 18px;
+  color: black;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+.btn-success:hover {
+  color: rgba(255, 255, 255, 0.938);
+}
+
+.select_op {
+  width: 40%;
+}
+
+/*------------- footer area --------------*/
+.footer {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto 10px auto;
+  border: 1px solid gray;
+  border-radius: 3px;
+  background-color: rgb(196, 194, 194);
+}
+.social_img a img {
+  width: 40px;
+  height: 40px;
+  margin: 10px 7px;
+  display: inline-block;
+}
+.social_img a img:hover {
+  transition: ease-in-out 0.2s;
+  box-shadow: 1px 1px 7px 7px #383535;
+  border-radius: 50%;
+}
+.footer_text {
+  margin-top: 6px;
+}
+.footer_text img {
+  width: 30px;
+  height: 30px;
+}
+.footer_text h5 span {
+  color: rgb(219, 29, 29);
+}
+.footer_text h6 {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .social_img a img {
+    margin: 5px 2px;
+  }
+  input {
+    width: 80%;
+  }
+  .btn-success {
+    margin-left: 15px;
+  }
+  .select_op {
+    width: 100%;
+  }
+}
